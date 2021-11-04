@@ -1,0 +1,42 @@
+//main: ../style.less
+
+.timeline{
+    max-width: 768px;
+   
+    display: flex;
+    margin: 4.2rem auto;
+    position: relative;
+
+    &::before{
+        content: "";
+        display: block;
+        width: 1px;
+        height: 100%;
+        background-color: @black;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        z-index: 1;
+    }
+}
+
+.timeline__col{
+    width: 50%;
+}
+.timeline__title{
+    font-size: 1.2rem;
+    color: @black;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    margin-bottom: 2.6rem;
+}
+
+.timeline__col--left{
+
+    padding-left: 3.2rem;
+
+}
+.timeline__col--right{
+    padding-right: 3.2rem;
+}
